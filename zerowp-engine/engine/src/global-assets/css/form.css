@@ -1,0 +1,117 @@
+.zwe-form-container {
+  max-width: 1200px;
+  margin: 15px 0 25px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.zwe-form-container .zwe-form-section-header {
+  position: relative;
+  padding: 20px 0 10px;
+}
+.zwe-form-container .zwe-form-section-header h1,
+.zwe-form-container .zwe-form-section-header h2,
+.zwe-form-container .zwe-form-section-header h3,
+.zwe-form-container .zwe-form-section-header h4,
+.zwe-form-container .zwe-form-section-header .section-description {
+  margin: 0 0 5px;
+}
+.zwe-form-container .zwe-form-section-header:before {
+  content: " ";
+  background: #3498DB;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 70px;
+}
+.zwe-form-container .form-section {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.zwe-form-container .form-section:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.zwe-form-container .button.button-primary.button-large {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 13px;
+  height: auto;
+  line-height: 1.5;
+}
+.zwe-form-field-error {
+  display: inline-block;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FF7F5F;
+  margin: 0;
+  position: relative;
+}
+.zwe-form-message {
+  display: inline-block;
+  padding: 6px 13px;
+  font-size: 14px;
+  border-radius: 3px;
+  line-height: 1.5;
+  color: #fff;
+  margin-left: 15px;
+  position: relative;
+}
+.zwe-form-message:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  left: -4px;
+  top: 50%;
+  margin-top: -4px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 10;
+}
+.zwe-form-message.is-success {
+  background: #27AE60;
+}
+.zwe-form-message.is-error {
+  background: #FF7F5F;
+}
+/*
+-------------------------------------------------------------------------------
+Metaboxes Right Side - ~300px wide
+-------------------------------------------------------------------------------
+*/
+#postbox-container-1 .zwe-form-container .form-table,
+#postbox-container-1 .zwe-form-container .form-table tbody,
+#postbox-container-1 .zwe-form-container .form-table tr,
+#postbox-container-1 .zwe-form-container .form-table th,
+#postbox-container-1 .zwe-form-container .form-table td {
+  display: block;
+  width: auto;
+}
+#postbox-container-1 .zwe-form-container .form-table th,
+#postbox-container-1 .zwe-form-container .form-table td {
+  margin: 0;
+}
+#postbox-container-1 .zwe-form-container .form-table th {
+  padding: 10px 0;
+}
+#postbox-container-1 .zwe-form-container .form-table td {
+  padding: 0 0 10px;
+}
+/*
+-------------------------------------------------------------------------------
+General styles for metaboxes
+-------------------------------------------------------------------------------
+*/
+#postbox-container-1 .zwe-form-container .form-section,
+#postbox-container-2 .zwe-form-container .form-section {
+  border-bottom-color: #eee;
+}

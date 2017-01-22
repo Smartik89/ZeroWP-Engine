@@ -1,0 +1,154 @@
+.zwe-media-upload {
+  display: block;
+  max-width: 400px;
+}
+.zwe-media-upload .media-container {
+  position: relative;
+  padding: 6px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background: #e8eef0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  border: 1px solid #fafafa;
+}
+.zwe-media-upload .media-container .media-item {
+  position: relative;
+  display: block;
+  border: 1px solid #ddd;
+  margin: 0 0 -1px;
+  z-index: 1;
+  padding: 15px 50px 15px 50px;
+  background: #fefefe;
+  cursor: default;
+}
+.zwe-media-upload .media-container .media-item > div {
+  display: block;
+  width: auto;
+  vertical-align: middle;
+}
+.zwe-media-upload .media-container .media-item > div.media-delete {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  font-size: 20px;
+  line-height: 1;
+  padding: 5px;
+  cursor: pointer;
+  color: #FF6766;
+  border-radius: 2px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.zwe-media-upload .media-container .media-item > div.media-delete .the-icon {
+  font-size: inherit;
+  line-height: inherit;
+}
+.zwe-media-upload .media-container .media-item > div.media-delete:hover {
+  background: #FF6766;
+  color: #fff;
+}
+.zwe-media-upload .media-container .media-item > div.media-icon {
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #60646D;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.zwe-media-upload .media-container .media-item > div.media-icon .the-icon {
+  font-size: inherit;
+  line-height: inherit;
+}
+.zwe-media-upload .media-container .media-item > div.media-details {
+  overflow: hidden;
+  position: relative;
+  padding-right: 50px;
+}
+.zwe-media-upload .media-container .media-item > div.media-details .title {
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.zwe-media-upload .media-container .media-item > div.media-details .size {
+  display: inline-block;
+  font-size: 14px;
+  color: #6C8784;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background: #fefefe;
+}
+.zwe-media-upload .media-container .media-item:first-of-type {
+  border-radius: 3px 3px 0 0;
+}
+.zwe-media-upload .media-container .media-item:last-of-type {
+  border-radius: 0 0 3px 3px;
+}
+.zwe-media-upload .media-container:empty {
+  display: none;
+}
+.zwe-media-upload .media-container.media-sortable .media-item .media-icon {
+  cursor: move;
+}
+.zwe-media-upload .media-container.media-sortable .sortable-placeholder {
+  background: #D8E2EC;
+  height: 50px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.zwe-media-upload .media-button {
+  position: relative;
+  display: block;
+  border: 0;
+  margin: 0 0 15px;
+  z-index: 1;
+  padding: 5px 15px 5px 40px;
+  cursor: pointer;
+  color: #888;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.zwe-media-upload .media-button .the-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  background: #888;
+  color: #fff;
+  padding: 3px 1px 0 1px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-transform: translateY(-48%);
+  -moz-transform: translateY(-48%);
+  -o-transform: translateY(-48%);
+  -ms-transform: translateY(-48%);
+  transform: translateY(-48%);
+}
+.zwe-media-upload .media-button .the-icon > span {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-size: 20px;
+}
+.zwe-media-upload .media-button .text {
+  display: inline-block;
+  padding: 0;
+}
+.zwe-media-upload .media-button:hover {
+  color: #3498DB;
+}
+.zwe-media-upload .media-button:hover .the-icon {
+  background: #3498DB;
+}

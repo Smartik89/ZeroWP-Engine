@@ -1,0 +1,121 @@
+@import "../lesshat.less";
+
+.zwe-form-container{
+	max-width: 1200px;
+	margin: 15px 0 25px 0;
+	.box-sizing( border-box );
+
+	.zwe-form-section-header{
+		position: relative;
+		padding: 20px 0 10px;
+		h1, h2, h3, h4, .section-description{
+			margin: 0 0 5px;
+		}
+		&:before{
+			content: " ";
+			background: #3498DB;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 1px;
+			width: 70px;
+		}
+	}
+	.form-section{
+		margin-bottom: 20px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+		&:last-of-type{
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	.button.button-primary.button-large{
+		display: inline-block;
+		font-size: 14px;
+		padding: 5px 13px;
+		height: auto;
+		line-height: 1.5;
+	}
+}
+//Field error
+.zwe-form-field-error{
+	display: inline-block;
+	padding: 4px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #FF7F5F;
+	margin: 0;
+	position: relative;
+}
+
+//Form messages
+.zwe-form-message{
+	display: inline-block;
+	padding: 6px 13px;
+	font-size: 14px;
+	border-radius: 3px;
+	line-height: 1.5;
+	color: #fff;
+	margin-left: 15px;
+	position: relative;
+	&:before{
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background: inherit;
+		left: -4px;
+		top: 50%;
+		margin-top: -4px;
+		.transform( rotate( 45deg ) );
+		z-index: 10;
+	}
+	&.is-success{
+		background: #27AE60;
+	}
+	&.is-error{
+		background: #FF7F5F;
+	}
+}
+
+/*
+-------------------------------------------------------------------------------
+Metaboxes Right Side - ~300px wide
+-------------------------------------------------------------------------------
+*/
+
+#postbox-container-1{
+	.zwe-form-container{
+		.form-table{
+			&, tbody, tr, th, td {
+				display: block;
+				width: auto;
+			}
+			th, td {
+				margin: 0;
+			}
+			th {
+				padding: 10px 0;
+			}
+			td {
+				padding: 0 0 10px;
+			}
+		}
+	}
+}
+
+/*
+-------------------------------------------------------------------------------
+General styles for metaboxes
+-------------------------------------------------------------------------------
+*/
+#postbox-container-1,
+#postbox-container-2{
+	.zwe-form-container{
+		.form-section{
+			border-bottom-color: #eee;
+		}
+	}
+}
